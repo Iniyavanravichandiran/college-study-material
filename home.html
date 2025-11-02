@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departments</title>
+
+    <style>
+        /* Reset basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        /* Body style */
+        body {
+            background: linear-gradient(135deg, #74b9ff, #a29bfe);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #2d3436;
+            padding: 40px 20px;
+        }
+
+        /* Main heading */
+        h2 {
+            text-align: center;
+            font-size: 32px;
+            color: #2d3436;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Section container */
+        section {
+            width: 100%;
+            max-width: 1200px;
+            background: #ffffffd5;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            backdrop-filter: blur(8px);
+        }
+
+        /* Year headings */
+        section h2 {
+            margin: 30px 0 15px;
+            text-align: center;
+            color: #0984e3;
+            font-size: 26px;
+            border-bottom: 2px solid #0984e3;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Image grid layout */
+        section div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        /* Department images */
+        section div a img {
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid transparent;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Hover effects */
+        section div a img:hover {
+            transform: scale(1.08);
+            border-color: #0984e3;
+            box-shadow: 0 10px 25px rgba(9, 132, 227, 0.5);
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: auto;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            padding: 15px 0;
+            border-top: 2px solid rgba(255, 255, 255, 0.4);
+            color: #2d3436;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        footer span {
+            color: #0984e3;
+            font-weight: 600;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            section div a img {
+                height: 150px;
+                width: 150px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            section div {
+                gap: 15px;
+            }
+
+            section div a img {
+                height: 120px;
+                width: 120px;
+            }
+
+            section h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Departments</h2>
+
+    <section>
+        <h2>R2021</h2>
+        <div>
+            <a href="Dept-21/IT-21.html"><img src="/IMAGE/IT Dept.png" alt="IT"></a>
+            <a href="Dept-21/CSE-21.html"><img src="/IMAGE/CSE Dept.png" alt="CSE"></a>
+            <a href="Dept-21/ECE-21.html"><img src="/IMAGE/ECE Dept.png" alt="ECE"></a>
+            <a href="Dept-21/EEE-21.html"><img src="IMAGE/EEE Dept.png" alt="EEE"></a><br>
+            <a href="Dept-21/MECH-21.html"><img src="/IMAGE/MECH Dept.png" alt="MECH"></a>
+            <a href="Dept-21/AIDS-21.html"><img src="IMAGE/AIDS Dept.png" alt="AIDS"></a>
+            <a href="Dept-21/CS-21.html"><img src="IMAGE/CS Dept.png" alt="CS"></a>
+            <a href="Dept-21/AIML-21.html"><img src="IMAGE/AIML Dept.png" alt="AIML"></a>
+        </div>
+
+        <h2>R2025</h2>
+        <div>
+            <a href="Dept-25/IT-2.html"><img src="/IMAGE/IT Dept.png" alt="IT"></a>
+            <a href="Dept-25/CSE-2.html"><img src="/IMAGE/CSE Dept.png" alt="CSE"></a>
+            <a href="Dept-25/ECE-2.html"><img src="/IMAGE/ECE Dept.png" alt="ECE"></a>
+            <a href="Dept-25/EEE-2.html"><img src="IMAGE/EEE Dept.png" alt="EEE"></a><br>
+            <a href="Dept-25/MECH-2.html"><img src="/IMAGE/MECH Dept.png" alt="MECH"></a>
+            <a href="Dept-25/AIDS-2.html"><img src="IMAGE/AIDS Dept.png" alt="AIDS"></a>
+            <a href="Dept-25/CS-2.html"><img src="IMAGE/CS Dept.png" alt="CS"></a>
+            <a href="Dept-25/AIML-2.html"><img src="IMAGE/AIML Dept.png" alt="AIML"></a>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Department Portal | Developed by <span>IT</span>
+    </footer>
+</body>
+
+</html>

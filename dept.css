@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #8e44ad, #6c5ce7);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main section card */
+section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 50px 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 800px;
+}
+
+/* Grid layout for semester cards */
+ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+/* Individual semester card */
+li {
+  background: linear-gradient(135deg, #a29bfe, #be93fd);
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  padding: 30px 0;
+  box-shadow: 0 8px 20px rgba(108, 92, 231, 0.3);
+  width: 150px;
+}
+
+/* Hover animation */
+li:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(142, 68, 173, 0.5);
+  background: linear-gradient(135deg, #6c5ce7, #8e44ad);
+}
+
+/* Links inside each card */
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: block;
+}
+
+/* Title above grid */
+section::before {
+  content: "Select Semester";
+  display: block;
+  text-align: center;
+  font-size: 26px;
+  color: #f5f5f5;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+  li {
+    width: 120px;
+    padding: 20px 0;
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+  section::before {
+    font-size: 22px;
+  }
+}
